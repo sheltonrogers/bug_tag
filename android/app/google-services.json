@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "911873753940",
+    "firebase_url": "https://bug-tag.firebaseio.com",
+    "project_id": "bug-tag",
+    "storage_bucket": "bug-tag.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911873753940:android:9c965dad7b5c0be8",
+        "android_client_info": {
+          "package_name": "com.sheltonrogers.bugtag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911873753940-nraq75vu0h68lsb62rdplda2nfr1aqbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxoMsX4Omfm7ID8CB28asO41lcnjl-IWg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
