@@ -100,20 +100,6 @@
             </list>
           </value>
         </entry>
-        <entry key="flutter_facebook_login">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-1.1.1/lib" />
-            </list>
-          </value>
-        </entry>
-        <entry key="flutter_firebase_ui">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_firebase_ui-0.0.7/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="flutter_test">
           <value>
             <list>
@@ -431,8 +417,6 @@
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.2/lib" />
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.5.12/lib" />
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.2.4/lib" />
-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-1.1.1/lib" />
-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_firebase_ui-0.0.7/lib" />
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/front_end-0.1.0-alpha.12/lib" />
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/glob-1.1.5/lib" />
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-3.0.4/lib" />

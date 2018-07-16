@@ -1,5 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:bug_tag/pages/tag_bug.dart';
+
+import 'pages/tag_bug.dart';
+import 'util/bug.dart';
+import 'util/database.dart';
 
 void main() => runApp(new MyApp());
 
@@ -31,20 +36,24 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  List<Bug> displayedBugs = [];
+
+  Database _database = new Database();
 
   @override
   void initState() {
     super.initState();
+
+    print("ADSFasdASDasd");
+    _database.listenForBugs().listen((b) {
+      print(b.toString());
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    Widget body = new ListView(
-      children: <Widget>[
-        new ListTile(
-          title: new Text("You haven't tagged any bugs yet..."),
-        )
-      ]
+    Widget body = new ListView.builder(
+      itemBuilder: (BuildContext context, int index) => _makeElement(index),
     );
 
     return new Scaffold(
@@ -60,10 +69,25 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  _makeElement(index) {
+    if (index >= displayedBugs.length) {
+      if (index == 0) {
+        // The user has no bugs, let them know
+        return new ListTile(
+          title: new Text("You haven't tagged any bugs yet..."),
+        );
+      }
+      return null;
+    }
+    return new ListTile(
+      title: new Text(displayedBugs[index].name)
+    );
+  }
+
   void _tagBug() {
-    // Navigator.of(context).push(new MaterialPageRoute(
-    //   builder: (context) => new TagBugPage(),
-    // ));
+    Navigator.of(context).push(new MaterialPageRoute(
+      builder: (context) => new TagBugPage(),
+    ));
   }
 }
 

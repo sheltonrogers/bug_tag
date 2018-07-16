@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_ui/flutter_firebase_ui.dart';
 import 'dart:async';
 
 
@@ -28,21 +27,22 @@ class _SignInPageState extends State<SignInPage> {
 
   @override
   Widget build(BuildContext context) {
-    return new SignInScreen(
-      title: "Bienvenue",
-      header: new Padding(
-        padding: const EdgeInsets.symmetric(vertical: 32.0),
-        child: new Padding(
-          padding: const EdgeInsets.all(32.0),
-          child: new Text("Demo"),
-        ),
-      ),
-      providers: [
-        ProvidersTypes.facebook,
-        ProvidersTypes.google,
-        ProvidersTypes.email
-      ],
-    );
+    return Column();
+    //return new SignInScreen(
+    //  title: "Bienvenue",
+    //  header: new Padding(
+    //    padding: const EdgeInsets.symmetric(vertical: 32.0),
+    //    child: new Padding(
+    //      padding: const EdgeInsets.all(32.0),
+    //      child: new Text("Demo"),
+    //    ),
+    //  ),
+    //  providers: [
+    //    ProvidersTypes.facebook,
+    //    ProvidersTypes.google,
+    //    ProvidersTypes.email
+    //  ],
+    //);
   }
 
   void _finishWhenSignedIn() async {

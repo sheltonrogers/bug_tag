@@ -1,3 +1,0 @@
-class Bug {
-  String name;
-}

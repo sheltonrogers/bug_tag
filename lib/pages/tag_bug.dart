@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:bug_tag/util/Bug.dart';
+
+import '../util/bug.dart';
 
 class TagBugPage extends StatefulWidget {
   @override
@@ -13,8 +14,6 @@ class _TagBugPageState extends State<TagBugPage> {
 
   @override
   Widget build(BuildContext context) {
-    TextFormField nameField = TextFormField();
-
     return new Scaffold(
       appBar: new AppBar(
         actions: <Widget>[
@@ -42,6 +41,6 @@ class _TagBugPageState extends State<TagBugPage> {
   void _finishTag() {
     _formKey.currentState.save();
     print(_inputBug.name);
-    //Navigator.of(context).pop();
+    Navigator.of(context).pop();
   }
 }
